@@ -1,0 +1,200 @@
+/* navbar compoents styling   */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(104, 41, 199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+nav input[type="submit"] {
+    background-color: white;
+    color: purple;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 40px;
+}
+
+.main {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 40%;
+
+}
+
+.button {
+    padding: 5px;
+}
+
+
+.search-bar {
+    display: block; /* Show the search bar by default */
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        display: none; /* Hide the search bar on small screens */
+    }
+}
+
+/* navbar  ends here  */
+
+
+
+
+
+/* here is the  main content */
+
+.paradiv {
+    margin: 5% auto;
+    width: 80%;
+    background-color: white;
+   
+    overflow: hidden;
+    /* padding: 20px; */
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .left {
+    flex: 1;
+    max-width: 70%;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    max-width: 80%;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .paragraph{
+    max-width: 80%;
+    font-size: larger;
+    color: rgb(92, 90, 90);
+    font-weight: 500;
+  }
+  
+  img {
+    max-width: 85%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left, .right {
+      flex: none;
+      width: 100%;
+    }
+  }
+  /* main content ends here  */
+
+
+
+
+
+/* here starts doctor menu  */
+
+.containerd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.card {
+    width: 180px;
+    margin: 5px;
+    padding: 10px ;
+    color: rgb(94, 93, 93);
+    border-radius: 8px;
+    text-align: left;
+    /* Align text to the left */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    /* Center the image */
+    border-radius: 8px;
+}
+
+
+.seemorebutton {
+    padding: 8px 10px;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-weight: 300;
+    color: rgb(79, 76, 76);
+    font-size: medium;
+    background: white;
+}
+
+.seemorecontainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-div{
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+.card p {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+
+
+
