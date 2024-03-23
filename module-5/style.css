@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* nav {
+    background-color: rgb(104, 41, 199);
+    display: flex;
+    width: 100vw;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+} */
+
+nav {
+    background-color: rgb(104, 41, 199);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed; /* Stick the navbar to the top */
+    top: 0; /* Ensure it's at the top */
+    left: 0; /* Ensure it's at the left */
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+nav input[type="submit"] {
+    background-color: white;
+    color: purple;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 40px;
+}
+
+.main {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 40%;
+
+}
+
+.button {
+    padding: 5px;
+}
+
+
+.search-bar {
+    display: block; /* Show the search bar by default */
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        display: none; /* Hide the search bar on small screens */
+    }
+}
+
+/* navbar  ends here  */
+
+
+
+
+header {
+    width: 100vw;
+    min-height: 100vh;
+    background: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    max-width: 5000px;
+    max-height: 5000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+}
+
+.left {
+    flex-basis: 50%;
+
+}
+
+.right {
+    flex-basis: 50%;
+
+}
+
+form {
+    padding: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    color: #2c3e50;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+
+#zip {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+#zip select {
+
+    padding: 0.5rem 0.7rem;
+
+}
+
+#zip input[type="number"] {
+    padding: 0.5rem 0.7rem;
+    margin-left: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    background: #34495e;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #2c3e50;
+}
+
+@media only screen and (max-width: 770px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+.submitbutton{
+    background-color: rgb(104, 41, 199);
+}
